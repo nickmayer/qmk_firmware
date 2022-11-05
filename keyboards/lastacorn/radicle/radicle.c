@@ -9,6 +9,9 @@ void keyboard_post_init_kb(void) {
     debug_keyboard = true;
     debug_mouse    = true;
     keyboard_post_init_user();
+
+    oled_on();
+    oled_set_brightness(64);
 }
 
 void matrix_scan_user() {
@@ -21,6 +24,6 @@ void matrix_scan_user() {
 joystick_config_t joystick_axes[JOYSTICK_AXES_COUNT] = {
     JOYSTICK_AXIS_IN(PIN_JOY_X, 1023, 512, 0),
     JOYSTICK_AXIS_IN(PIN_JOY_Y, 1023, 512, 0),
-    JOYSTICK_AXIS_VIRTUAL,
-    JOYSTICK_AXIS_VIRTUAL
+    JOYSTICK_AXIS_IN(PIN_JOY_Z, 1023, 512, 0),
+    JOYSTICK_AXIS_IN(PIN_JOY_R, 1023, 512, 0),
 };

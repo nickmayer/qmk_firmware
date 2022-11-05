@@ -35,11 +35,5 @@
                 { "matrix": [1, 2], "x": 2, "y": 1 }
             ]
         }
-    },
-    "backlight": {
-        "pin": "A0"
-    },
-    "rgblight": {
-        "pin": "A1"
     }
 }
