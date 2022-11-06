@@ -5,8 +5,10 @@
 
 #include "quantum.h"
 
-#define ___ KC_NO
+#define PIN_JOY_X GP26
+#define PIN_JOY_Y GP27
 
+#define ___ KC_NO
 // clang-format off
  #define LAYOUT(  \
              K02, \

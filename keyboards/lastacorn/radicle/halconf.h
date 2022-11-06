@@ -5,6 +5,10 @@
 
 #include_next <halconf.h>
 
+/* ADC */
+#undef HAL_USE_ADC
+#define HAL_USE_ADC TRUE
+
 /* SPI */
 #undef HAL_USE_SPI
 #define HAL_USE_SPI TRUE

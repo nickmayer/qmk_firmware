@@ -48,6 +48,7 @@
 #define RGBLED_NUM          12
 
 /* Enable Framebuffer and keypress effects */
+#define RGB_MATRIX_MAXIMUM_BRIGHTNESS 64
 #define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 #define RGB_MATRIX_KEYPRESSES
 
